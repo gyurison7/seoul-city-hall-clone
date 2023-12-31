@@ -1,0 +1,60 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+
+footer .footer-bottom .call,
+.sc-slide .control-area [class*="btn-"],
+.sc-seoul .seoul-sns .seoul-header a::before,
+.sc-new .new-header a::before,
+.sc-event .event-header a,
+header .search-group .btn-submit::before,
+.gnb h1::before {
+  background-image: url("../images/sp-bg.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+}
+
+footer .footer-top a:last-child::after,
+.sc-news .main-col-right .sns-group [class*="link-"]::before {
+  background-image: url("../images/sp-sns.png");
+  background-size: 295px;
+  background-repeat: no-repeat;
+}
+
+.sc-service .service-item [class*="ico-"]::before {
+  background-image: url("../images/sp-icon.png");
+  background-size: 1200px;
+  background-repeat: no-repeat;
+}
+.sc-seoul .seoul-sns .sns-item [class*="link-"]::before {
+  background-image: url("../images/sp-sns2.png");
+  background-size: 280px;
+  background-repeat: no-repeat;
+}
+
+.sc-event .color-welfare {
+  color: #d76000;
+}
+.sc-event .color-environment {
+  color: #599100;
+}
+.sc-event .color-culture {
+  color: #9b64d3;
+}
+.sc-new .color-welfare {
+  background-color: #d76000;
+}
+.sc-new .color-environment {
+  background-color: #599100;
+}
+.sc-new .color-culture {
+  background-color: #9b64d3;
+}
+.sc-new .color-traffic {
+  background-color: #337ee2;
+}

@@ -1,0 +1,259 @@
+@import url("./reset.css");
+@import url("./common.css");
+
+.wrapper {
+  min-width: 1152px;
+}
+
+.top-banner {
+  position: relative;
+}
+.top-banner a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+.top-banner a img {
+  min-width: 1920px;
+  width: 100%;
+  max-width: none;
+}
+.top-banner input {
+  margin-right: 2px;
+}
+.top-banner .close {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 50%;
+  bottom: 5px;
+  width: 154px;
+  margin-right: -576px;
+  padding: 3px 2px 5px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #fff;
+}
+.top-banner .close .btn-close {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url("../images/close.png") no-repeat center center;
+  background-size: 50% auto;
+  border: 0;
+  vertical-align: middle;
+}
+
+header {
+  width: 1152px;
+  margin: 0 auto;
+}
+
+.gnb {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.gnb h1::before {
+  display: block;
+  content: "";
+  background-position: -5px -165px;
+  width: 105px;
+  height: 27px;
+  position: relative;
+  top: -5px;
+}
+.gnb h1 a {
+}
+.gnb .gnb-list {
+  display: flex;
+  margin-left: 50px;
+}
+.gnb .gnb-item {
+  margin-left: 20px;
+}
+.gnb .gnb-item a {
+  display: block;
+  font-size: 16px;
+  height: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+.gnb .my {
+  display: flex;
+  position: absolute;
+  right: 0;
+  gap: 20px;
+}
+.gnb .my a {
+  font-size: 14px;
+  height: 48px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+header .header-bottom {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 120px;
+}
+header .header-bottom h2 {
+}
+header .header-bottom .search-group {
+  position: absolute;
+  width: 520px;
+  height: 42px;
+  border: 3px solid #2292e9;
+  left: 50%;
+  top: 40px;
+  margin-left: -326px;
+  margin-top: 0;
+}
+header .search-group input {
+  width: calc(100% - 42px);
+  border: 0;
+  padding: 0 10px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  color: #767676;
+  outline: none;
+}
+header .search-group input::placeholder {
+  color: #2292e9;
+  font-size: 15px;
+}
+header .search-group .btn-keyboard {
+  position: absolute;
+  top: 12px;
+  right: 42px;
+}
+header .search-group .btn-submit::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-position: -32px -97px;
+  top: 0;
+}
+header .weather-group {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+header .weather-group .col-left {
+  display: flex;
+  align-items: center;
+  margin-right: 61px;
+}
+header .weather-group .weather-img {
+}
+header .weather-group .weather-info .temperature {
+  font-size: 16px;
+}
+header .weather-group .weather-info .temperature em {
+  margin-right: 5px;
+  font-size: 25px;
+}
+header .weather-group .weather-info .dust {
+  margin-top: 7px;
+  font-size: 13px;
+  letter-spacing: -1.5px;
+}
+header .weather-group .weather-info .dust span {
+  color: #009944;
+}
+
+header .language {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  height: inherit;
+}
+header .language select {
+  width: 80px;
+  height: 21px;
+  border-color: #afcfea;
+  color: #1e6cb3;
+  font-size: 12px;
+  padding-left: 2px;
+  line-height: 21px;
+}
+header .language .btn-go {
+  width: 30px;
+  height: 21px;
+  font-size: 11px;
+  color: #fff;
+  background-color: #1e6cb3;
+}
+
+footer {
+  width: 1152px;
+  margin: 0 auto;
+}
+footer .footer-top {
+  display: flex;
+  padding: 20px 0;
+}
+footer .footer-top a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 12px;
+  color: #636363;
+  padding: 0 10px;
+}
+footer .footer-top a:first-child {
+  padding-left: 0;
+}
+footer .footer-top a + a:not(:last-child):before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 14px;
+  margin-top: -6px;
+  background: #dcdcdc;
+}
+footer .footer-top a:last-child::after {
+  position: absolute;
+  content: "";
+  width: 114px;
+  height: 24px;
+  background-position: 0 -30px;
+  left: 0;
+}
+footer .footer-top em {
+  font-weight: 700;
+}
+footer .footer-bottom {
+  display: flex;
+  position: relative;
+  padding: 22px 0;
+  border-top: 1px solid #ccc;
+}
+footer .footer-bottom .call {
+  margin-right: 40px;
+  width: 108px;
+  height: 45px;
+  background-position: -180px 0;
+}
+footer .footer-bottom address {
+}
+footer .footer-bottom address p {
+  padding-bottom: 6px;
+  font-size: 12px;
+  color: #636363;
+}
+footer .footer-bottom .mark {
+  position: absolute;
+  right: 0;
+}
