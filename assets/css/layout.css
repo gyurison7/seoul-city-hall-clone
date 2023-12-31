@@ -15,8 +15,7 @@
   overflow: hidden;
 }
 .top-banner a img {
-  min-width: 1920px;
-  width: 100%;
+  width: 1920px;
   max-width: none;
 }
 .top-banner input {

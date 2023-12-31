@@ -230,7 +230,6 @@
 }
 .sc-story .story-inner {
   display: flex;
-  overflow: hidden;
 }
 .sc-story a {
   padding: 20px 0;
