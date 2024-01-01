@@ -8,13 +8,24 @@
 }
 
 footer .footer-bottom .call,
-.sc-slide .control-area [class*="btn-"],
+.sc-banner .control-area [class*="btn-"],
 .sc-seoul .seoul-sns .seoul-header a::before,
 .sc-new .new-header a::before,
 .sc-event .event-header a,
 header .search-group .btn-submit::before,
 .gnb h1::before {
   background-image: url("../images/sp-bg.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+}
+
+.sc-news .main-col-left .slide-control [class*="btn-"] {
+  background-image: url("../images/sp-bg2.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+}
+.sc-news .main-col-left [class*="tab-"] span::before {
+  background-image: url("../images/sp-slide.png");
   background-size: 300px;
   background-repeat: no-repeat;
 }
