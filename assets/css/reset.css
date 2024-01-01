@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR&family=Roboto:wght@100&family=Rubik+Bubbles&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -67,4 +69,5 @@ body {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   min-width: 320px;
+  letter-spacing: -0.05em;
 }
