@@ -679,15 +679,15 @@
 }
 .sc-partners .partner-list {
   display: flex;
-  background: #f7f7f7;
 }
 .sc-partners .partner-item {
   flex: 1;
+  background: #f7f7f7;
   border-top: 1px solid #d0d0d0;
   border-bottom: 1px solid #d0d0d0;
   border-right: 1px solid #d0d0d0;
   color: #333;
-  text-align: center;
+  z-index: 2;
 }
 .sc-partners .partner-item:first-child {
   border-left: 1px solid #d0d0d0;
@@ -721,23 +721,20 @@
 }
 .sc-partners .partner-menu {
   position: absolute;
-  bottom: 47px;
+  bottom: 16px;
   left: 0;
   overflow: hidden;
   width: 100%;
   height: 0;
   background: #fff;
-  border: 1px solid #d0d0d0;
-  border-top: 0;
-  padding: 0 20px;
-  text-align-last: left;
-  transition: all 0.3s ease-in-out;
-}
-.sc-partners .partner-menu.open {
-  width: 100%;
-  height: 227px;
   padding: 10px 20px 20px;
   border: 1px solid #d0d0d0;
+  transition: height 0.3s ease-in-out;
+  z-index: 1;
+}
+.sc-partners .partner-menu.open {
+  height: 227px;
+  bottom: 47px;
 }
 .sc-partners .partner-menu .partner-menu-list {
   display: grid;
