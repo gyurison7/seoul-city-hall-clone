@@ -9,63 +9,68 @@
 
 footer .footer-bottom .call,
 .sc-banner .control-area [class*="btn-"],
-.sc-seoul .seoul-sns .seoul-header a::before,
-.sc-new .new-header a::before,
-.sc-event .event-header a,
-header .search-group .btn-submit::before,
+.inner7 .group-sns .link-all-sns::before,
+.inner6 .link-all-issue::before,
+.inner4 .link-more,
+header .search-area .btn-submit::before,
 .gnb h1::before {
   background-image: url("../images/sp-bg.png");
   background-size: 300px;
   background-repeat: no-repeat;
 }
 
-.sc-news .main-col-left .slide-control [class*="btn-"] {
+.inner1 .main-col-left .slide-control [class*="btn-"] {
   background-image: url("../images/sp-bg2.png");
   background-size: 300px;
   background-repeat: no-repeat;
 }
-.sc-news .main-col-left [class*="tab-"] span::before {
+.inner1 .main-col-left [class*="tab-"] span::before {
   background-image: url("../images/sp-slide.png");
   background-size: 300px;
   background-repeat: no-repeat;
 }
 
 footer .footer-top a:last-child::after,
-.sc-news .main-col-right .sns-group [class*="link-"]::before {
+.inner1 .sns-area [class*="link-"]::before {
   background-image: url("../images/sp-sns.png");
   background-size: 295px;
   background-repeat: no-repeat;
 }
 
-.sc-service .service-item [class*="ico-"]::before {
+.inner2 .list li [class*="ico-"]::before {
   background-image: url("../images/sp-icon.png");
   background-size: 1200px;
   background-repeat: no-repeat;
 }
-.sc-seoul .seoul-sns .sns-item [class*="link-"]::before {
+.inner5 .list li [class*="ico-"]::after {
+  background-image: url("../images/sp-icon2.png");
+  background-size: 315px;
+  background-repeat: no-repeat;
+}
+.inner7 .group-sns .list [class*="link-"]::before {
   background-image: url("../images/sp-sns2.png");
   background-size: 280px;
   background-repeat: no-repeat;
 }
 
-.sc-event .color-welfare {
+.inner4 .color-welfare {
   color: #d76000;
 }
-.sc-event .color-environment {
+.inner4 .color-environment {
   color: #599100;
 }
-.sc-event .color-culture {
+.inner4 .color-culture {
   color: #9b64d3;
 }
-.sc-new .color-welfare {
+.inner6 .color-welfare {
   background-color: #d76000;
 }
-.sc-new .color-environment {
+.inner6 .color-environment {
   background-color: #599100;
 }
-.sc-new .color-culture {
+.inner6 .color-culture {
   background-color: #9b64d3;
 }
-.sc-new .color-traffic {
+.inner6 .color-traffic {
   background-color: #337ee2;
 }

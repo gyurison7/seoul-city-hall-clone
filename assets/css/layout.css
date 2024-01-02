@@ -57,7 +57,7 @@ header {
   align-items: center;
   position: relative;
 }
-.gnb h1::before {
+.gnb .logo::before {
   display: block;
   content: "";
   background-position: -5px -165px;
@@ -65,8 +65,6 @@ header {
   height: 27px;
   position: relative;
   top: -5px;
-}
-.gnb h1 a {
 }
 .gnb .gnb-list {
   display: flex;
@@ -82,13 +80,13 @@ header {
   line-height: 48px;
   font-weight: 700;
 }
-.gnb .my {
+.gnb .util-list {
   display: flex;
   position: absolute;
   right: 0;
   gap: 20px;
 }
-.gnb .my a {
+.gnb .util-list a {
   font-size: 14px;
   height: 48px;
   line-height: 48px;
@@ -101,9 +99,7 @@ header .header-bottom {
   align-items: center;
   height: 120px;
 }
-header .header-bottom h2 {
-}
-header .header-bottom .search-group {
+header .header-bottom .search-area {
   position: absolute;
   width: 520px;
   height: 42px;
@@ -113,7 +109,13 @@ header .header-bottom .search-group {
   margin-left: -326px;
   margin-top: 0;
 }
-header .search-group input {
+header .header-bottom .slogan-area a {
+  display: block;
+  width: 133px;
+  height: 51px;
+  background-image: url("../images/logo.png");
+}
+header .search-area input {
   width: calc(100% - 42px);
   border: 0;
   padding: 0 10px;
@@ -123,16 +125,16 @@ header .search-group input {
   color: #767676;
   outline: none;
 }
-header .search-group input::placeholder {
+header .search-area input::placeholder {
   color: #2292e9;
   font-size: 15px;
 }
-header .search-group .btn-keyboard {
+header .search-area .btn-keyboard {
   position: absolute;
   top: 12px;
   right: 42px;
 }
-header .search-group .btn-submit::before {
+header .search-area .btn-submit::before {
   display: inline-block;
   position: absolute;
   content: "";
@@ -141,43 +143,51 @@ header .search-group .btn-submit::before {
   background-position: -32px -97px;
   top: 0;
 }
-header .weather-group {
+header .weather-area {
   display: flex;
   align-items: center;
   position: absolute;
-  right: 0;
+  right: 143px;
 }
-header .weather-group .col-left {
+header .weather-area .col-left {
   display: flex;
   align-items: center;
   margin-right: 61px;
 }
-header .weather-group .weather-img {
+header .weather-area .weather-info {
+  display: flex;
+  flex-direction: column;
 }
-header .weather-group .weather-info .temperature {
+header .weather-info .temperature {
   font-size: 16px;
 }
-header .weather-group .weather-info .temperature em {
+header .weather-info .temperature em {
   margin-right: 5px;
   font-size: 25px;
 }
-header .weather-group .weather-info .dust {
+header .weather-info .dust {
   margin-top: 7px;
   font-size: 13px;
   letter-spacing: -1.5px;
 }
-header .weather-group .weather-info .dust span {
+header .weather-info .status-good {
   color: #009944;
 }
-
-header .language {
+header .brand-area {
+  position: absolute;
+  width: 74px;
+  height: 47px;
+  right: 0;
+  background-image: url("../images/seoulmysoul.png");
+}
+header .lang-area {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   width: 100%;
   height: inherit;
 }
-header .language select {
+header .lang-area #langList {
   width: 80px;
   height: 21px;
   border-color: #afcfea;
@@ -186,7 +196,7 @@ header .language select {
   padding-left: 2px;
   line-height: 21px;
 }
-header .language .btn-go {
+header .lang-area .btn-go {
   width: 30px;
   height: 21px;
   font-size: 11px;
