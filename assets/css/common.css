@@ -7,10 +7,10 @@
   margin: -1px;
 }
 
-footer .footer-bottom .call,
-.sc-banner .control-area [class*="btn-"],
-.inner7 .group-sns .link-all-sns::before,
-.inner6 .link-all-issue::before,
+footer .footer-bottom .call-center,
+.inner8 .control-area [class*="btn-"],
+.inner7 .group-sns .link-sns span,
+.new-issue .link-all-issue::before,
 .inner4 .link-more,
 header .search-area .btn-submit::before,
 .gnb h1::before {
@@ -30,19 +30,19 @@ header .search-area .btn-submit::before,
   background-repeat: no-repeat;
 }
 
-footer .footer-top a:last-child::after,
+footer .footer-top .kakao-channel::after,
 .inner1 .sns-area [class*="link-"]::before {
   background-image: url("../images/sp-sns.png");
   background-size: 295px;
   background-repeat: no-repeat;
 }
 
-.inner2 .list li [class*="ico-"]::before {
+.main-service .list li [class*="ico-"]::before {
   background-image: url("../images/sp-icon.png");
   background-size: 1200px;
   background-repeat: no-repeat;
 }
-.inner5 .list li [class*="ico-"]::after {
+.information .list li [class*="ico-"]::after {
   background-image: url("../images/sp-icon2.png");
   background-size: 315px;
   background-repeat: no-repeat;
@@ -62,15 +62,15 @@ footer .footer-top a:last-child::after,
 .inner4 .color-culture {
   color: #9b64d3;
 }
-.inner6 .color-welfare {
+.new-issue .color-welfare {
   background-color: #d76000;
 }
-.inner6 .color-environment {
+.new-issue .color-environment {
   background-color: #599100;
 }
-.inner6 .color-culture {
+.new-issue .color-culture {
   background-color: #9b64d3;
 }
-.inner6 .color-traffic {
+.new-issue .color-traffic {
   background-color: #337ee2;
 }

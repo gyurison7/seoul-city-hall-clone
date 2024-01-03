@@ -3,14 +3,14 @@ document.querySelectorAll(".menu-toggle").forEach(function (element) {
     // 클릭한 메뉴의 속성 가져오기
     var targetMenu = this.getAttribute("data-menu");
     var menu = document.querySelector(
-      ".partner-menu[data-menu='" + targetMenu + "']"
+      ".sub-menu[data-menu='" + targetMenu + "']"
     );
 
     // 메뉴가 이미 열려 있는지 확인
     var isMenuOpen = menu.classList.contains("open");
 
     // 모든 하위 메뉴 클래스 초기화
-    document.querySelectorAll(".partner-menu").forEach(function (menu) {
+    document.querySelectorAll(".sub-menu").forEach(function (menu) {
       menu.classList.remove("open");
     });
     document.querySelectorAll(".menu-toggle").forEach(function (button) {
