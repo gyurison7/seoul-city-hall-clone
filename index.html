@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>서울특별시 - 동행·매력 특별시 서울</title>
-    <link rel="stylesheet" href="./assets/css/layout.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -25,6 +29,7 @@
           <button class="btn-close"></button>
         </div>
       </div>
+
       <header class="header">
         <nav class="gnb">
           <h1 class="logo">
@@ -102,25 +107,128 @@
             <div class="main-col-left">
               <h2 class="blind">주요 뉴스 및 시민참여</h2>
               <div class="tab">
-                <div class="tab-news on"><span>주요뉴스</span></div>
-                <div class="tab-participation"><span>시민참여</span></div>
+                <button class="tab-news on"><span>주요뉴스</span></button>
+                <button class="tab-participation"><span>시민참여</span></button>
               </div>
-              <div class="slide">
-                <img
-                  src="./assets/images/slide1.jpg"
-                  alt="안심물품 지키미 신청"
-                />
+              <div class="swiper" data-swiper="newsSlide">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <a href="">
+                      <img src="./assets/images/slide1.jpg" alt="안심물품 지키미(ME) 신청" />
+                      <p>안심물품 지키미(ME)신청 2023.12.28.(목)12:00~접수인원 충족 시</p>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="">
+                      <img
+                        src="./assets/images/slide2.jpg"
+                        alt="아이 키우기 좋은 도시, 서울 탄생응원 서울 프로젝트"
+                      />
+                      <p>아이 탄생부터 육아까지! 서울의 초특급 응원 프로젝트</p>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="">
+                      <img
+                        src="./assets/images/slide3.jpg"
+                        alt="잠실~여의도 30분에 주파 한강에 리버버스 뜬다!"
+                      />
+                      <p>잠실~여의도 30분에 주파…한강에 리버버스 뜬다!</p>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="">
+                      <img
+                        src="./assets/images/slide4.jpg"
+                        alt="병원·역세권에 '어르신 안심주택'… 시세 30%~85%"
+                      />
+                      <p>병원·역세권에 '어르신 안심주택'…시세 30~85%</p>
+                    </a>
+                  </li>
+                </ul>
                 <div class="slide-bottom">
-                  <p>
-                    안심물품 지키미(ME)신청 2023.12.28.(목)12:00~접수인원 충족
-                    시
-                  </p>
+                  <p class="slide-content"></p>
                   <div class="slide-control">
-                    <span>1/4</span>
+                    <div class="swiper-pagination"></div>
                     <div class="control-area">
-                      <button class="btn-prev"></button>
-                      <button class="btn-pause"></button>
-                      <button class="btn-next"></button>
+                      <button class="btn-prev-news"></button>
+                      <button class="btn-pauseOrPlay"></button>
+                      <button class="btn-next-news"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper" data-swiper="pSlide">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <a href="">
+                      <img
+                        src="./assets/images/slide2-1.jpg"
+                        alt="2024년 서울시 디지털 신기술 거버넌스단 모집"
+                      />
+                      <p>
+                        2024년 디지털 신기술 거버넌스단 모집 모집기간
+                        2024.2.14.(수)~2.23.(금)(10일간)
+                      </p>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="">
+                      <img
+                        src="./assets/images/slide2-2.png"
+                        alt="어린이 눈건강 지킴이 안경 할인지원"
+                      />
+                      <p>[어린이행복프로젝트] 어린이 눈건강 지킴이 사업 신청안내(안경 20% 할인)</p>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="">
+                      <img
+                        src="./assets/images/slide2-3.jpg"
+                        alt="보건환경연구원 3대 뉴스 투표 이벤트 연구원의 9개의 주요 성과 중 3개의 성과에 투표해주세요! 투표기간 2024.02.07(수) ~ 2024.02.23(금)"
+                      />
+                      <p>보건환경연구원 3대 뉴스 투표 이벤트</p>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="">
+                      <img
+                        src="./assets/images/slide2-4.jpg"
+                        alt="서울영상크리에이터 9기 모집 안내"
+                      />
+                      <p>
+                        2024 서울영상크리에이터 9기 모집 안내 모집기간
+                        2024.2.7.(수)~2024.2.20(화)(14일간)
+                      </p>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="">
+                      <img
+                        src="./assets/images/slide2-5.jpg"
+                        alt="동행과 매력의 균형도시, 서울 서울의 미래를 그리는 주요 정책을 서울시 지방시대 계획에 담았습니다. 지방시대 알아보기"
+                      />
+                      <p>(지방시대) 동행과 매력의 균형도시 서울을 소개합니다.</p>
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="">
+                      <img
+                        src="./assets/images/slide2-6.jpg"
+                        alt="의무운행기간 내 판매승인 신청 ·신청기간 2023.11.6(월) 9시 ~ 상시"
+                      />
+                      <p>전기·수소자동차·이륜차 의무운행기간 내 판매승인 신청</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slide-bottom">
+                  <p class="slide-content"></p>
+                  <div class="slide-control">
+                    <div class="swiper-pagination"></div>
+                    <div class="control-area">
+                      <button class="btn-prev-p"></button>
+                      <button class="btn-pauseOrPlay"></button>
+                      <button class="btn-next-p"></button>
                     </div>
                   </div>
                 </div>
@@ -137,23 +245,14 @@
               <section class="mayor">
                 <h2 class="blind"></h2>
                 <a href="" class="link-mayor">
-                  <img
-                    src="./assets/images/mayor.png"
-                    alt="서울특별시장 오세훈입니다."
-                  />
+                  <img src="./assets/images/mayor.png" alt="서울특별시장 오세훈입니다." />
                 </a>
                 <a href="" class="link-mayor-hope">
-                  <img
-                    src="./assets/images/btn-mayor.png"
-                    alt="시장에게 바란다"
-                  />
+                  <img src="./assets/images/btn-mayor.png" alt="시장에게 바란다" />
                 </a>
                 <div class="link-area">
                   <a href="">
-                    <img
-                      src="./assets/images/mayor-link1.png"
-                      alt="공약(매니페스토)"
-                    />
+                    <img src="./assets/images/mayor-link1.png" alt="공약(매니페스토)" />
                   </a>
                   <a href="">
                     <img src="./assets/images/mayor-link2.png" alt="정책제안" />
@@ -290,16 +389,10 @@
               />
             </a>
             <a href="">
-              <img
-                src="./assets/images/story4.jpg"
-                alt="대한민국 정부 대표포털 정부24(민원)"
-              />
+              <img src="./assets/images/story4.jpg" alt="대한민국 정부 대표포털 정부24(민원)" />
             </a>
             <a href="">
-              <img
-                src="./assets/images/story5.jpg"
-                alt="민원발급서비스 서울시온라인민원"
-              />
+              <img src="./assets/images/story5.jpg" alt="민원발급서비스 서울시온라인민원" />
             </a>
           </div>
         </div>
@@ -311,44 +404,37 @@
                 <li>
                   <span class="color-welfare">복지</span>
                   <a href="">
-                    가족돌봄청(소)년 및 저소득 위기가구 안심소득 지원 500가구
-                    모집… 1월 2일부터 접수
+                    가족돌봄청(소)년 및 저소득 위기가구 안심소득 지원 500가구 모집… 1월 2일부터 접수
                   </a>
                 </li>
                 <li>
                   <span class="color-environment">환경</span>
                   <a href="">
-                    12월에는 자원순환 매장을 방문하고, 선물(모바일 상품권 1만
-                    원권) 받아가세요~
+                    12월에는 자원순환 매장을 방문하고, 선물(모바일 상품권 1만 원권) 받아가세요~
                   </a>
                 </li>
                 <li>
                   <span class="color-environment">환경</span>
                   <a href="">
-                    ``덜 쓰고 덜 타면 혜택이 쏠쏠~`` 서울시, 에코·승용차마일리지
-                    계절관리제 특별포인트 지급
+                    ``덜 쓰고 덜 타면 혜택이 쏠쏠~`` 서울시, 에코·승용차마일리지 계절관리제
+                    특별포인트 지급
                   </a>
                 </li>
                 <li>
                   <span class="color-welfare">복지</span>
                   <a href="">
-                    학부모는 안심하고 청소년은 성장하는 겨울방학…서울시 청소년
-                    동행캠프
+                    학부모는 안심하고 청소년은 성장하는 겨울방학…서울시 청소년 동행캠프
                   </a>
                 </li>
                 <li>
                   <span class="color-welfare">복지</span>
-                  <a href="">
-                    미세먼지 '좋음'이면 N서울타워 20% 할인해 드립니다!
-                  </a>
+                  <a href=""> 미세먼지 '좋음'이면 N서울타워 20% 할인해 드립니다! </a>
                 </li>
               </ul>
               <a href="" class="link-more"></a>
             </section>
             <section class="sc-board">
-              <h2 class="headline border-bottom border-2px">
-                이달의 행사 및 축제
-              </h2>
+              <h2 class="headline border-bottom border-2px">이달의 행사 및 축제</h2>
               <ul class="list">
                 <li>
                   <span class="color-environment">환경</span>
@@ -357,27 +443,20 @@
                 <li>
                   <span class="color-environment">환경</span>
                   <a href="">
-                    서울숲을 수놓는 8만개의 빛과 음악 `겨울빛,
-                    윈터라이트(WINTERLIGHTS)`
+                    서울숲을 수놓는 8만개의 빛과 음악 `겨울빛, 윈터라이트(WINTERLIGHTS)`
                   </a>
                 </li>
                 <li>
                   <span class="color-culture">문화</span>
-                  <a href="">
-                    2023 공공미술 수변갤러리 프로젝트 <싱싱겨울> 개최
-                  </a>
+                  <a href=""> 2023 공공미술 수변갤러리 프로젝트 <싱싱겨울> 개최 </a>
                 </li>
                 <li>
                   <span class="color-culture">문화</span>
-                  <a href="">
-                    연말 분위기 축제·공연 한 곳에… `DDP 겨울축제`로 오세요!
-                  </a>
+                  <a href=""> 연말 분위기 축제·공연 한 곳에… `DDP 겨울축제`로 오세요! </a>
                 </li>
                 <li>
                   <span class="color-environment">환경</span>
-                  <a href="">
-                    겨울방학은 서울의 공원에서! 배우고 즐기는 겨울 프로그램 풍성
-                  </a>
+                  <a href=""> 겨울방학은 서울의 공원에서! 배우고 즐기는 겨울 프로그램 풍성 </a>
                 </li>
               </ul>
               <a href="" class="link-more"></a>
@@ -437,8 +516,8 @@
                     <img src="./assets/images/new1.jpg" alt />
                   </div>
                   <p>
-                    야간, 휴일에도 진료하는 병원을 찾고 있다면? 우리아이 안심
-                    의료기관을 이용해 보세요
+                    야간, 휴일에도 진료하는 병원을 찾고 있다면? 우리아이 안심 의료기관을 이용해
+                    보세요
                   </p>
                 </a>
               </li>
@@ -449,8 +528,8 @@
                     <img src="./assets/images/new2.jpg" alt />
                   </div>
                   <p>
-                    모바일 여권 하나로 세금환급, 교통카드, 결제까지! 서울시
-                    관광새싹기업, 외국인 관광객 위한 간편 서비스 앱 출시
+                    모바일 여권 하나로 세금환급, 교통카드, 결제까지! 서울시 관광새싹기업, 외국인
+                    관광객 위한 간편 서비스 앱 출시
                   </p>
                 </a>
               </li>
@@ -460,10 +539,7 @@
                     <em class="color-welfare">복지</em>
                     <img src="./assets/images/new3.jpg" alt />
                   </div>
-                  <p>
-                    매출 오르고, 20% 저렴…추운겨울 `서울형키즈카페머니`로
-                    키즈카페 놀러오세요
-                  </p>
+                  <p>매출 오르고, 20% 저렴…추운겨울 `서울형키즈카페머니`로 키즈카페 놀러오세요</p>
                 </a>
               </li>
               <li>
@@ -481,9 +557,7 @@
                     <em class="color-culture">문화</em>
                     <img src="./assets/images/new5.jpg" alt />
                   </div>
-                  <p>
-                    서울 시내 공중화장실, `보편성·안전성` 갖추고 새롭게 거듭난다
-                  </p>
+                  <p>서울 시내 공중화장실, `보편성·안전성` 갖추고 새롭게 거듭난다</p>
                 </a>
               </li>
               <li>
@@ -492,10 +566,7 @@
                     <em class="color-welfare">복지</em>
                     <img src="./assets/images/new6.jpg" alt />
                   </div>
-                  <p>
-                    `강추위 속 쪽방촌에 온기를` 방한용품·연탄 등 후원 손길
-                    이어져
-                  </p>
+                  <p>`강추위 속 쪽방촌에 온기를` 방한용품·연탄 등 후원 손길 이어져</p>
                 </a>
               </li>
               <li>
@@ -504,10 +575,7 @@
                     <em class="color-traffic">교통</em>
                     <img src="./assets/images/new7.jpg" alt />
                   </div>
-                  <p>
-                    빨간불 남은 시간 알려주는 신호등 시범 구축…답답함
-                    해소·무단횡단 예방
-                  </p>
+                  <p>빨간불 남은 시간 알려주는 신호등 시범 구축…답답함 해소·무단횡단 예방</p>
                 </a>
               </li>
               <li>
@@ -526,10 +594,7 @@
             <section class="group-video">
               <h3 class="headline">서울영상</h3>
               <a href="">
-                <img
-                  src="./assets/images/seoul.jpg"
-                  alt="한 사람을 위한 서울이야기"
-                />
+                <img src="./assets/images/seoul.jpg" alt="한 사람을 위한 서울이야기" />
                 <p>서울시민이 직접 들려준 '한 사람을 위한 서울이야기'</p>
               </a>
             </section>
@@ -539,19 +604,13 @@
                 <li>
                   <a href=""><span>고시공고</span> </a>
                   <a href="">
-                    <p>
-                      「2023년 정신질환자 자립생활지원센터 운영」 보조사업자
-                      선정심의 결과 공고
-                    </p>
+                    <p>「2023년 정신질환자 자립생활지원센터 운영」 보조사업자 선정심의 결과 공고</p>
                   </a>
                 </li>
                 <li>
                   <a href=""><span>입찰공고</span></a>
                   <a href="">
-                    <p>
-                      2023년 정신질환자 주거지원사업 서비스제공기관 선정심의
-                      결과 공고
-                    </p>
+                    <p>2023년 정신질환자 주거지원사업 서비스제공기관 선정심의 결과 공고</p>
                   </a>
                 </li>
                 <li>
@@ -563,10 +622,7 @@
                 <li>
                   <a href=""><span>보도자료</span></a>
                   <a href="">
-                    <p>
-                      (자료제공) 30일 새벽 눈 예보, 서울시 29일(금) 제설
-                      비상근무 1단계 돌입
-                    </p>
+                    <p>(자료제공) 30일 새벽 눈 예보, 서울시 29일(금) 제설 비상근무 1단계 돌입</p>
                   </a>
                 </li>
               </ul>
@@ -617,35 +673,77 @@
           </section>
           <section class="inner8">
             <h2 class="blind">서울시가 진행중인 이벤트 배너</h2>
-            <ul class="list">
-              <li>
-                <a href="">
-                  <img
-                    src="./assets/images/banner1.jpg"
-                    alt="2024 강원 동계청소년올림픽대회 01.19-02.01 경기티켓 무료예매 GANGWON2024.com"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img
-                    src="./assets/images/banner2.jpg"
-                    alt="대한민국 국가상징 국민 통합과 자긍심의 상징"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <img src="./assets/images/banner3.jpg" alt="부패·공익신고" />
-                </a>
-              </li>
-            </ul>
-            <div class="banner-control">
-              1/5
-              <div class="control-area">
-                <button class="btn-prev"></button>
-                <button class="btn-pause"></button>
-                <button class="btn-next"></button>
+            <div class="swiper" data-swiper="bannerSlide">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="">
+                    <img
+                      src="./assets/images/banner1.jpg"
+                      alt="2024 강원 동계청소년올림픽대회 01.19-02.01 경기티켓 무료예매 GANGWON2024.com"
+                    />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="">
+                    <img
+                      src="./assets/images/banner2.jpg"
+                      alt="대한민국 국가상징 국민 통합과 자긍심의 상징"
+                    />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="">
+                    <img src="./assets/images/banner3.jpg" alt="부패·공익신고" />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="">
+                    <img
+                      src="./assets/images/banner4.png"
+                      alt="서울과 함께하는 두 개의 마음 동행·매력 특별시 서울"
+                    />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="">
+                    <img
+                      src="./assets/images/banner5.jpg"
+                      alt="2024 산업안전 대진단 중대재해 예방, 대진단으로 시작하세요!"
+                    />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="">
+                    <img
+                      src="./assets/images/banner6.jpg"
+                      alt="보기 쉽고 찾기 쉬운 서울 지하철 노선도"
+                    />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="">
+                    <img
+                      src="./assets/images/banner7.jpg"
+                      alt="2023년 국민권익위원회 종합청렴도 평가 결과 공개"
+                    />
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="">
+                    <img
+                      src="./assets/images/banner8.jpg"
+                      alt="일자리부르릉 찾아가는 여성 취업 상담버스"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <div class="banner-control">
+                <span class="swiper-pagination"></span>
+                <div class="control-area">
+                  <button class="btn-prev-banner"></button>
+                  <button class="btn-pauseOrPlay"></button>
+                  <button class="btn-next-banner"></button>
+                </div>
               </div>
             </div>
           </section>
@@ -653,9 +751,7 @@
             <h2 class="blind">서울시 관련 사이트</h2>
             <ul class="site-list">
               <li class="site-item">
-                <button class="btn-menu menu-toggle" data-menu="menu1">
-                  직속기관·사업소
-                </button>
+                <button class="btn-menu menu-toggle" data-menu="menu1">직속기관·사업소</button>
               </li>
               <div class="sub-menu" data-menu="menu1">
                 <ul class="sub-list">
@@ -721,9 +817,7 @@
                 </ul>
               </div>
               <li class="site-item">
-                <button class="btn-menu menu-toggle" data-menu="menu2">
-                  공사·출연기관
-                </button>
+                <button class="btn-menu menu-toggle" data-menu="menu2">공사·출연기관</button>
               </li>
               <div class="sub-menu" data-menu="menu2">
                 <ul class="sub-list">
@@ -806,9 +900,7 @@
                 </ul>
               </div>
               <li class="site-item">
-                <button class="btn-menu menu-toggle" data-menu="menu3">
-                  자치구
-                </button>
+                <button class="btn-menu menu-toggle" data-menu="menu3">자치구</button>
               </li>
               <div class="sub-menu" data-menu="menu3">
                 <ul class="sub-list">
@@ -974,18 +1066,12 @@
         </div>
         <div class="footer-bottom">
           <div class="call-center">
-            <span class="blind">
-              문의 120 정보를 못찾으셨나요? 120다산콜센터로 물어보세요!
-            </span>
+            <span class="blind"> 문의 120 정보를 못찾으셨나요? 120다산콜센터로 물어보세요! </span>
           </div>
           <address>
-            <p>
-              서울특별시청 04524 서울특별시 중구 세종대로 110 [찾아오시는 길]
-            </p>
+            <p>서울특별시청 04524 서울특별시 중구 세종대로 110 [찾아오시는 길]</p>
             <p>대표전화: 02-120 또는 02-731-2120</p>
-            <small>
-              &copy; Seoul Metropolitan Government all rights reserved
-            </small>
+            <small> &copy; Seoul Metropolitan Government all rights reserved </small>
           </address>
           <div class="mark-area">
             <a href="">
