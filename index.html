@@ -60,7 +60,7 @@
             </a>
           </div>
           <div class="search-area">
-            <form action="" method="get">
+            <form method="get">
               <fieldset>
                 <legend class="blind">검색</legend>
                 <input type="text" placeholder="검색어를 입력해 주세요" />
@@ -91,7 +91,7 @@
           </div>
           <div class="lang-area">
             <label for="langList" class="blind">Language</label>
-            <select name="" id="langList">
+            <select name="langList" id="langList">
               <option value="https://www.naver.com">ENGLISH</option>
               <option value="https://www.naver.com">日本語</option>
               <option value="https://www.naver.com">简体中文</option>
@@ -449,7 +449,7 @@
                 </li>
                 <li>
                   <span class="color-culture">문화</span>
-                  <a href=""> 2023 공공미술 수변갤러리 프로젝트 <싱싱겨울> 개최 </a>
+                  <a href=""> 2023 공공미술 수변갤러리 프로젝트 &lt;싱싱겨울&gt; 개최 </a>
                 </li>
                 <li>
                   <span class="color-culture">문화</span>
@@ -754,6 +754,22 @@
               <li class="site-item">
                 <button class="btn-menu menu-toggle" data-menu="menu1">직속기관·사업소</button>
               </li>
+              <li class="site-item">
+                <button class="btn-menu menu-toggle" data-menu="menu2">공사·출연기관</button>
+              </li>
+              <li class="site-item">
+                <button class="btn-menu menu-toggle" data-menu="menu3">자치구</button>
+              </li>
+              <li class="site-item">
+                <a href="" class="btn-menu">중앙행정기관</a>
+              </li>
+              <li class="site-item">
+                <button class="btn-menu menu-toggle" data-menu="menu5">
+                  지방자치단체·유관기관
+                </button>
+              </li>
+            </ul>
+            <div>
               <div class="sub-menu" data-menu="menu1">
                 <ul class="sub-list">
                   <li class="sub-item">
@@ -817,9 +833,6 @@
                   </li>
                 </ul>
               </div>
-              <li class="site-item">
-                <button class="btn-menu menu-toggle" data-menu="menu2">공사·출연기관</button>
-              </li>
               <div class="sub-menu" data-menu="menu2">
                 <ul class="sub-list">
                   <li class="sub-item">
@@ -900,9 +913,6 @@
                   </li>
                 </ul>
               </div>
-              <li class="site-item">
-                <button class="btn-menu menu-toggle" data-menu="menu3">자치구</button>
-              </li>
               <div class="sub-menu" data-menu="menu3">
                 <ul class="sub-list">
                   <li class="sub-item">
@@ -980,14 +990,6 @@
                   </li>
                 </ul>
               </div>
-              <li class="site-item">
-                <a href=""><button class="btn-menu">중앙행정기관</button></a>
-              </li>
-              <li class="site-item">
-                <button class="btn-menu menu-toggle" data-menu="menu5">
-                  지방자치단체·유관기관
-                </button>
-              </li>
               <div class="sub-menu" data-menu="menu5">
                 <ul class="sub-list">
                   <li class="sub-item">
@@ -1043,7 +1045,7 @@
                   </li>
                 </ul>
               </div>
-            </ul>
+            </div>
           </section>
         </div>
       </main>
